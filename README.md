@@ -1,8 +1,15 @@
 # OHealthBridge
 
-让 OPPO / 一加 / realme 手表的**勿扰同步**与**闹钟同步**在非 OPPO 手机（小米 HyperOS、荣耀 MagicOS、三星 One UI、原生 Android 等）上正常工作的 LSPosed 模块。
+**让 OPPO / 一加 / realme 手表在非 OPPO 手机上，也能与手机同步勿扰状态和闹钟。**
 
-无需修改 OPPO 健康 APK，基于现代 libxposed API，静态作用域自动生效。
+OPPO 健康把手表联动能力绑在 ColorOS 私有接口上。换到小米 HyperOS、荣耀 MagicOS、三星 One UI 或原生 Android 后，手表收不到手机的勿扰变化，手机闹钟也不会在手表上响。本模块通过 LSPosed 在运行时补齐这些能力——不修改 OPPO 健康，不重打包，不侵入系统。
+
+| | |
+|---|---|
+| 运行方式 | [LSPosed](https://github.com/LSPosed/LSPosed) 或兼容的现代 libxposed 框架，作用域已内置 |
+| 目标应用 | OPPO 健康 `com.heytap.health` 6.7.x – 6.9.x |
+| 系统要求 | Android 8.0+，已 Root |
+| 下载 | [Releases](../../releases) |
 
 ## 功能
 
@@ -14,12 +21,6 @@
   - 手表上关闭 / 贪睡 → 手机闹钟同步停止 / 贪睡
   - 默认按 `notification.category == alarm` 识别，兼容所有闹钟应用；也可切换为包名白名单
 - **品牌自适应**：OPPO 系手机自动闲置（原生即可用），其他品牌自动启用
-
-## 环境要求
-
-- 已 Root 手机，并安装 [LSPosed](https://github.com/LSPosed/LSPosed)（或兼容的现代 libxposed 框架）
-- **OPPO 健康**（com.heytap.health）6.7.x – 6.9.x
-- 系统 Android 8.0+
 
 ## 安装
 
