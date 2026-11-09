@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">OHealthBridge</string>
+    <string name="xposed_description">在非 OPPO 手机上启用 OPPO 手表的勿扰与闹钟同步</string>
+</resources>
