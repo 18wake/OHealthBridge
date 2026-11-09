@@ -9,7 +9,7 @@ OPPO 健康把手表联动能力绑在 ColorOS 私有接口上。换到小米 Hy
 | 运行方式 | [LSPosed](https://github.com/LSPosed/LSPosed) 或兼容的现代 libxposed 框架，作用域已内置 |
 | 目标应用 | OPPO 健康 `com.heytap.health` 6.7.x – 6.9.x |
 | 系统要求 | Android 8.0+，已 Root |
-| 下载 | [Releases](../../releases) |
+| 下载 | [最新版本](https://github.com/18wake/OHealthBridge/releases/latest) |
 
 ## 功能
 
